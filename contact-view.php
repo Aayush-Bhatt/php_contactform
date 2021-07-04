@@ -35,7 +35,12 @@
                 <input type="submit" name="send" class="btn-submit"
                     value="Send" />
 
-                
+                <div id="statusMessage"> 
+                        <?php
+                        if (! empty($message)) {
+                            ?>
+                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                        <?php
                         }
                         ?>
                     </div>
